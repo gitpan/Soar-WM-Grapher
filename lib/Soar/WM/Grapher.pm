@@ -18,7 +18,7 @@ use base qw(Exporter);
 our @EXPORT_OK = qw(wm_graph);
 use feature 'state';
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 # print wm_graph(@ARGV)->as_svg('lawyers.svg') unless caller;
 if ( !caller ) {
@@ -99,7 +99,7 @@ Soar::WM::Grapher - Utility for creating graphs of Soar's working memory
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -122,6 +122,7 @@ Soar::WM - Perl extension for representing Soar working memory given a WME dump 
 =head1 METHODS
 
 =head2 C<wm_graph>
+
 There are three required arguments: a L<Soar::WM> object, the ID of the working memory element to begin graphing from, and the depth to graph.
 If the depth is 1, then only the specified element and its attribute-value pairs will be graphed. 2 will also graph each of the WMEs attached to the first node, and so on.
 The return value is a L<GraphViz> object.

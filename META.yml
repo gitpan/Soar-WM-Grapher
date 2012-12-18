@@ -24,7 +24,7 @@ no_index:
 provides:
   Soar::WM::Grapher:
     file: lib/Soar/WM/Grapher.pm
-    version: 0.01
+    version: 0.02
 requires:
   Carp: 0
   Exporter: 0
@@ -40,7 +40,7 @@ resources:
   homepage: https://github.com/garfieldnate/Soar-WM-Grapher
   license: http://dev.perl.org/licenses/
   repository: https://github.com/garfieldnate/Soar-WM-Grapher.git
-version: 0.01
+version: 0.02
 x_BuiltWith:
   modules:
     Carp: 1.26
@@ -50,9 +50,9 @@ x_BuiltWith:
     File::Temp: 0.22
     GraphViz: 2.14
     Module::Build: 0.4002
-    Pod::Coverage::TrustPod: 'NA(possibly not installed)'
+    Pod::Coverage::TrustPod: 0.100002
     Soar::WM: 0.02
-    Test::CPAN::Meta: 'NA(possibly not installed)'
+    Test::CPAN::Meta: 0.22
     Test::More: 0.98
     Test::Pod: 1.45
     Test::Pod::Coverage: 1.08
